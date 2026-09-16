@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Fell Out Of Love, a short film by Ben Graham Smith." />
-    <link rel="canonical" href="https://davidstephens.github.io/fell-out-of-love/" />
+    <link rel="canonical" href="https://foolfilm.com/" />
     <title>Fell Out Of Love | A short film by Ben Graham Smith</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -117,9 +117,29 @@
       document.querySelector('.share-email').href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${text}\n\n${url}`)}`;
       document.querySelector('.share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
       document.querySelector('.share-x').href = `https://x.com/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
-      document.querySelector('.share-native').addEventListener('click', async () => {
-        if (navigator.share) await navigator.share({ title, text, url });
-        else document.querySelector('.share-links').classList.toggle('is-visible');
+      const shareButton = document.querySelector('.share-native');
+      const shareLinks = document.querySelector('.share-links');
+      const showCopied = () => {
+        shareButton.innerHTML = 'Link copied <span aria-hidden="true">✓</span>';
+        window.setTimeout(() => { shareButton.innerHTML = 'Share this film <span aria-hidden="true">↗</span>'; }, 2200);
+      };
+      shareButton.addEventListener('click', async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share({ title, text, url });
+            return;
+          }
+          await navigator.clipboard.writeText(url);
+          showCopied();
+        } catch {
+          shareLinks.classList.add('is-visible');
+          try {
+            await navigator.clipboard.writeText(url);
+            showCopied();
+          } catch {
+            shareButton.innerHTML = 'Choose a share option below <span aria-hidden="true">↓</span>';
+          }
+        }
       });
     </script>
   </body>
