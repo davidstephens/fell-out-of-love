@@ -14,83 +14,135 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Fell Out Of Love home">FOOL</a>
       <nav aria-label="Primary navigation">
-        <a href="#story">The film</a>
-        <a href="#vision">The vision</a>
-        <a href="#support">Support it</a>
+        <a href="#pitch">The pitch</a>
+        <a href="#cast">The cast</a>
+        <a href="#crew">The crew</a>
+        <a href="#film">The film</a>
+        <a href="#ask">The ask</a>
       </nav>
     </header>
 
     <main id="top">
+      <!-- INTRO / TITLE PAGE
+           Background: swap this section's background-image for the Elizabeth Moss / Max Minghella
+           still from The Handmaid's Tale referenced on page 1 of the treatment (may change later).
+           No such image ships in this repo, so drop the file in and update .hero's background-image
+           in styles.css (search "TREATMENT PAGE 1 BACKGROUND"). -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="grain" aria-hidden="true"></div>
         <div class="trees trees-left" aria-hidden="true"></div>
         <div class="trees trees-right" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow">Ticking Sands Productions presents</p>
+          <p class="hero-copy">It happens to the best of us</p>
           <h1 id="hero-title">Fell Out<br />Of Love</h1>
           <p class="byline">A short film by Ben Graham Smith</p>
-          <p class="hero-copy">It happens to the best of us.</p>
-          <a class="button button-primary" href="#support">Help bring it to life <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="#ask">Help bring it to life <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="hero-meta">Domestic thriller · 15 min · Vancouver, BC</p>
+        <p class="hero-meta">Drama/Thriller, 15 min</p>
       </section>
 
-      <section id="story" class="story section-shell" aria-labelledby="story-title">
-        <div class="section-label">01 — The story</div>
-        <div class="story-copy">
-          <p class="kicker">A weekend away. No service. Nowhere to hide.</p>
-          <h2 id="story-title">Love does not always leave quietly.</h2>
-          <p>Matt and Rose are a married couple at a crossroads. Hoping to heal old wounds, Matt takes Rose deep into the wilderness for a weekend camping trip. There is only the two of them, their history, and the forest.</p>
-          <p>Then Matt disappears. As night closes in, Rose is left alone with the cold, the silence, and a terrifying thought: perhaps he has not gotten lost at all.</p>
+      <!-- THE PITCH (page 2) -->
+      <section id="pitch" class="pitch section-shell" aria-labelledby="pitch-title">
+        <div class="section-label">01 — The pitch</div>
+        <div class="pitch-copy">
+          <h2 id="pitch-title">The logline.</h2>
+          <p>Rose and Matt's marriage is on the rocks. In a desperate attempt to save the relationship, Matt takes Rose deep into the wilderness for a weekend camping trip. Alone together, it quickly starts to feel more like a trap than a romantic weekend getaway.</p>
+          <p>Then Rose gets separated from Matt. As night closes in and she desperately tries to find shelter, a terrifying thought begins to take hold: What if Matt left her here on purpose?</p>
         </div>
-        <aside class="pull-quote">“The end title is a joke, yes—but one that, by design, ultimately leaves you cold.”</aside>
-      </section>
-
-      <section id="vision" class="vision" aria-labelledby="vision-title">
-        <div class="vision-top section-shell">
-          <div class="section-label">02 — The vision</div>
-          <div>
-            <p class="kicker">Haunting. Beautiful. Unforgiving.</p>
-            <h2 id="vision-title">The wilderness is the third lead.</h2>
+        <aside class="pitch-video">
+          <p class="section-label">Video pitch</p>
+          <div class="video-placeholder" aria-hidden="true">
+            <span>Video pitch with Ben — coming soon</span>
           </div>
-        </div>
-        <div class="vision-grid">
-          <article>
-            <span>01</span>
-            <h3>Played straight</h3>
-            <p>Dark comedy, horror, thriller, and domestic drama meet without winking at the camera.</p>
+          <p class="pitch-video-note">Ben is writing and recording a video pitch in the next few days. Check back soon.</p>
+        </aside>
+      </section>
+
+      <!-- THE CAST! (page 3) -->
+      <section id="cast" class="people section-shell" aria-labelledby="cast-title">
+        <div class="section-label">02 — The cast!</div>
+        <div class="people-list">
+          <h2 id="cast-title">The cast.</h2>
+          <article class="person">
+            <div class="photo-placeholder" aria-hidden="true"><span>Photo of Dasha Kittredge — treatment, p. 10</span></div>
+            <div class="person-copy">
+              <h3>Dasha Kittredge <span>as Rose</span></h3>
+              <p>Dasha Kittredge is a veteran of the famed Los Angeles interactive theater production "The Willows" and television shows including Nurse Jackie, as well as a graduate of NYU's Meisner Extension. She is the type of actor who thrives on delivering whatever the scene requires, whether that means playing it straight or chewing on the scenery. This role will require both and more, and she can't wait to dive in!</p>
+              <a class="text-link" href="https://www.imdb.com/name/nm3598788/" target="_blank" rel="noopener noreferrer">Dasha Kittredge on IMDb ↗</a>
+            </div>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Close, even apart</h3>
-            <p>In a 1.85 frame, the vast landscape heightens the intimate pressure between two people who cannot escape each other.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Silence has weight</h3>
-            <p>Wind, birds, distant wolves, and the unease of near-total quiet create a soundscape that keeps the audience listening.</p>
+          <article class="person">
+            <div class="photo-placeholder" aria-hidden="true"><span>Photo of Ben Graham Smith — treatment, p. 10</span></div>
+            <div class="person-copy">
+              <h3>Ben Graham Smith <span>as Matt</span></h3>
+              <p>Ben Graham Smith spent his full childhood through college performing in countless local theater productions and has been writing screenplays ever since. "Fell Out Of Love" marks his return to acting after nearly twenty years and the first time he'll be performing his own material on camera. This project is deeply personal to him and he's so excited to bring it to life!</p>
+              <a class="text-link" href="#" data-imdb-pending>Ben Graham Smith on IMDb ↗</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="makers section-shell" aria-labelledby="makers-title">
-        <div class="section-label">03 — The couple</div>
-        <div class="makers-main">
-          <h2 id="makers-title">Built through rehearsal. Played with truth.</h2>
-          <div class="makers-columns">
-            <p><strong>Dasha Kittredge as Rose</strong><br />A veteran of Los Angeles interactive theater and television, Dasha brings the range and emotional precision Rose demands.</p>
-            <p><strong>Ben Graham Smith as Matt</strong><br />Writer, director, and actor Ben returns to performance with a story made to hold the camera close.</p>
-          </div>
+      <!-- THE CREW! (So far) (page 4) -->
+      <section id="crew" class="people section-shell" aria-labelledby="crew-title">
+        <div class="section-label">03 — The crew! (so far)</div>
+        <div class="people-list">
+          <h2 id="crew-title">The crew.</h2>
+          <article class="person">
+            <div class="photo-placeholder" aria-hidden="true"><span>Photo of Jonathan Michael Mahoney — to be supplied by Jon</span></div>
+            <div class="person-copy">
+              <h3>Jonathan Michael Mahoney <span>Director of Photography</span></h3>
+              <p>Our film will be lensed by the brilliant Jonathan Michael Mahoney! Jonathan has shot multiple features, shorts, commercials, music videos and experimental films. He is a graduate of California Institute of the Arts (CalArts) and FAMU (Film and TV School of the Performing Arts in Prague, Czech Republic), with an emphasis on 35mm cinematography. Most recently he worked as a camera operator on Avatar: Fire and Ash. Jonathan had the honor of being selected by Kodak to be an official 16mm film stock tester for Kodak's Vision 3 250D stock before its commercial release, and is so excited to be shooting 16mm again!</p>
+              <a class="text-link" href="https://www.imdb.com/name/nm2471467/" target="_blank" rel="noopener noreferrer">Jonathan Michael Mahoney on IMDb ↗</a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="support" class="support" aria-labelledby="support-title">
-        <div class="support-inner">
+      <!-- THE FILM! (LITERALLY!) (page 5) -->
+      <section id="film" class="film section-shell" aria-labelledby="film-title">
+        <div class="section-label">04 — The film! (literally!)</div>
+        <div class="film-copy">
+          <h2 id="film-title">Shot on 16mm.</h2>
+          <p class="kicker">Oh, and did I mention I plan to shoot this on 16mm film?</p>
+          <p>This is a key part of what we're raising money for. When all is said and done, shooting this on film will cost about $1,000 more than shooting on digital, but the results will be worth every penny.</p>
+          <p>Film is intention. Film is a magic trick. A literal illusion. Some people love working with digital because it gives them more options to work with in the editing room. I'm not interested in having more to work with. I'm interested in getting the takes we need. We won't have much time regardless.</p>
+          <p>Put it this way. While I've seen so many movies shot digitally that look better than so many movies I've seen that are shot on film, at the end of the day, I firmly feel that film at its best is still consistently better than digital at its best.</p>
+          <p>And we're shooting in the wilderness! Talk about looking great on film! I want to see the rich greens of the trees, the texture of skin, through the grain of 16mm.</p>
+          <p>If anyone would like to read my extended passionate rant about film and why it's important (and I know at least SOME of you do!), <a class="text-link" href="#essay">click here</a>.</p>
+        </div>
+      </section>
+
+      <section id="essay" class="essay section-shell" aria-labelledby="essay-title">
+        <div class="section-label">Hyperlinked essay</div>
+        <div class="essay-copy">
+          <h2 id="essay-title">Why film.</h2>
+          <p>When I was in film school making my first short films, shooting on actual film seemed to be my good luck charm. These were invariably my best works compared with most of what I shot digitally. I don't think it's an accident. Film is what makes me want to get up in the morning. It's precious and therefore demands precision. It brings a different level of focus to the set. As much as I love digital when it's done well, it's not ultimately what I signed up for. It's hard to get me excited about it in even remotely the same way. I didn't come to this conclusion overnight, though. I wasn't always like this…</p>
+          <p>It was around the time I was in film school when movies first began to transition from being shot on film to being shot on digital, and the feelings of me and my friends were…confused? Digital suddenly gave us access to make work in a cheap and easy way that had never before been possible, and yet these didn't look like films as we understood them (I'm being generous). Were we excited about this new and easy access? Or were we on the raw end of a bait-and-switch, where now those dreams of looking through the lens of a Panavision camera like Steven Spielberg seemed further than ever?</p>
+          <p>The first few years of digital cinematography had some of us feeling cautiously optimistic. Film was still the standard, and so the standard was high, meaning people tended not to mess with digital unless they were damn confident they could reach that bar. And top directors like David Fincher, Steven Soderbergh and Michael Mann were among the first to get their hands dirty, enthusiastically so, making the waters seem potentially safe for the rest of us…</p>
+          <p>But then something happened. Digital became the default. Not an option, or an alternative, or simply a new tool (which I've long felt is the best way to view it). Instead, it became thought of as a cheaper option than film, and as more films made on digital by great directors did continue to get made, those great-looking movies became justification for all movies (or almost all) to get shot on digital, because by that point most people couldn't tell the difference anyway.</p>
+          <p>And now? People don't go to the movies anymore. Okay, so they do, but at a fraction of what the numbers used to be. People are always so quick to point to streaming and Peak TV as the culprit, yet Christopher Nolan's "The Odyssey" is still selling out showtimes in 70mm months into its release, to say nothing of its sales worldwide, and I believe there's a direct connection. Christopher Nolan has always been one of the biggest evangelists for celluloid, along with people like Quentin Tarantino, and there's a reason seeing their movies in theaters always feels like events.</p>
+          <p>The next time you go to your local cinema, take a look at the bright parts of the screen. Nine times out of ten you can see the wavy patterns of the silver screen itself. It almost looks dirty, but you don't see those patterns and lines when film is being projected, because the silver screen was designed specifically to have film projected onto it, not digital. I've noticed that even if a movie is projected digitally, it still looks better on the big screen if it was originally shot on film.</p>
+          <p>Have I mentioned I love film?</p>
+          <p>To repurpose the Men's Warehouse tagline, "You're gonna love the way it looks. I guarantee it."</p>
+          <a class="text-link" href="#film">↑ Back to The Film</a>
+        </div>
+      </section>
+
+      <!-- THE ASK! (page 6) -->
+      <section id="ask" class="ask" aria-labelledby="ask-title">
+        <div class="ask-inner">
           <p class="eyebrow">Join the making of the film</p>
-          <h2 id="support-title">Help us take<br />the next step.</h2>
-          <p>Fell Out Of Love is preparing to shoot in the Vancouver area. Your support helps turn a carefully rehearsed, visually ambitious short into a finished film.</p>
+          <h2 id="ask-title">The ask.</h2>
+          <p>We are humbly asking for donations of anything you can give! No amount is too big or too small, and every single person who donates will be credited onscreen by name.</p>
+          <p>Our goal is to raise $20,000 to make and distribute the film. Pre-production will take about 8 weeks and we are planning to shoot in mid-January in the greater Los Angeles area, so our aim is to reach our goal by November 15th!</p>
+          <p>If we do reach our goal, however, you can still donate past that date, right up through production and post-production! More resources mean more can go up on the screen, so please forward this to any and everyone you think may be interested!</p>
+          <ul class="tiers">
+            <li><span class="tier-amount">Up to $999</span><span class="tier-detail">An onscreen "Thank You" credit, a digital copy of the completed film and a mailed invite to the premiere.</span></li>
+            <li><span class="tier-amount">$1,000 – $1,999</span><span class="tier-detail">An "Associate Producer" credit onscreen, a digital copy of the completed film and a mailed invite to the premiere.</span></li>
+            <li><span class="tier-amount">$2,000 and up</span><span class="tier-detail">An "Executive Producer" credit onscreen, a digital copy of the completed film and a mailed invite to the premiere.</span></li>
+          </ul>
           <a class="button button-light" href="mailto:bengrahamsmith@gmail.com?subject=Fell%20Out%20Of%20Love">Get in touch to support <span aria-hidden="true">↗</span></a>
           <p class="support-note">Crowdfunding link coming soon</p>
           <div class="share" aria-label="Share Fell Out Of Love">
@@ -101,6 +153,17 @@
               <a class="share-x" href="#" target="_blank" rel="noopener noreferrer">X</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- THANK YOU! (page 7) -->
+      <section id="thanks" class="thanks section-shell" aria-labelledby="thanks-title">
+        <div class="section-label">Thank you!</div>
+        <div class="thanks-copy">
+          <h2 id="thanks-title">Thank you.</h2>
+          <p>I want to thank you personally (yes, you!) for taking the time to read this and for your consideration! It means a tremendous amount to me, and I consider it an absolute privilege to get to spend my working life creatively by writing scripts and making films.</p>
+          <p>It's all possible thanks to you.</p>
+          <p class="signature">With love and appreciation,<br />Ben</p>
         </div>
       </section>
     </main>
